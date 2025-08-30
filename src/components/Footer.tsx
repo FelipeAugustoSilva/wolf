@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="space-y-8 xl:col-span-1">
             <div>
               <span className="text-2xl font-bold">WOLF</span>
-              {/* <span className="text-2xl font-light text-accent"> Consultoria</span> */}
+              <span className="text-2xl font-light text-accent"> Technologies</span>
             </div>
             <p className="text-sm leading-6 text-primary-foreground/80">
               Transformamos números em decisões estratégicas. Consultoria financeira especializada 
@@ -84,7 +84,7 @@ export default function Footer() {
                   </li>
                   <li className="flex items-center space-x-3">
                     <Mail className="h-4 w-4 text-accent" />
-                    <span className="text-sm text-primary-foreground/80">contato@wolfconsultoria.com.br</span>
+                    <span className="text-sm text-primary-foreground/80">contato@wolftech.app.br</span>
                   </li>
                   {/* <li className="flex items-start space-x-3">
                     <MapPin className="h-4 w-4 text-accent mt-0.5" />
@@ -100,7 +100,7 @@ export default function Footer() {
         </div>
         <div className="mt-16 border-t border-primary-foreground/20 pt-8 sm:mt-20 lg:mt-24">
           <p className="text-xs leading-5 text-primary-foreground/60 text-center">
-            &copy; 2025 WOLF. Todos os direitos reservados.
+            &copy; 2025 WOLF Technologies. Todos os direitos reservados.
           </p>
         </div>
       </div>

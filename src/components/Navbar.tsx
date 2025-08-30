@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5">
             <span className="text-2xl font-bold text-primary">WOLF</span>
-            {/* <span className="text-2xl font-light text-accent"> Consultoria</span> */}
+            <span className="text-2xl font-light text-accent">  Technologies</span>
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -52,7 +52,7 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Button variant="default" size="sm" asChild>
-            <Link to="/demo">Agendar Demonstração</Link>
+            <Link to="/contato">Agendar Demonstração</Link>
           </Button>
         </div>
       </nav>
