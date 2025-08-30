@@ -181,12 +181,15 @@ export default function Servicos() {
             {services.map((service, index) => (
               <Card key={index} className="border-border hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-8">
-                  <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-lg bg-accent/10">
-                    <service.icon className="h-8 w-8 text-accent" />
+                  <div className="mb-6 flex items-center gap-4">
+                    <div className="flex h-16 w-16 items-center justify-center rounded-lg bg-accent/10 shrink-0">
+                      <service.icon className="h-8 w-8 text-accent" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground m-0">
+                      {service.title}
+                    </h3>
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-4">
-                    {service.title}
-                  </h3>
+
                   <p className="text-muted-foreground mb-6 leading-relaxed">
                     {service.description}
                   </p>
@@ -206,6 +209,7 @@ export default function Servicos() {
                   </div>
                 </CardContent>
               </Card>
+
             ))}
           </div>
         </div>
