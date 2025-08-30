@@ -1,6 +1,7 @@
 import { ArrowRight, TrendingUp, BarChart3, Users, Shield, Smartphone, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-dashboard.jpg";
 import teamImage from "@/assets/team-consulting.jpg";
 
@@ -51,11 +52,11 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/90 to-primary/80">
           <div className="absolute inset-0 bg-black/20" />
         </div>
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
-        
+
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl lg:text-7xl">
@@ -63,7 +64,7 @@ export default function Home() {
               <span className="text-accent">decisões estratégicas</span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-white/90 sm:text-xl">
-              Consultoria financeira especializada com a plataforma Meu Gestor. 
+              Consultoria financeira especializada com a plataforma Meu Gestor.
               Controle total, insights precisos e crescimento sustentável para o seu negócio.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -71,9 +72,15 @@ export default function Home() {
                 Quero otimizar minha gestão
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>*/}
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-white text-primar">
-                Agendar demonstração
-              </Button>
+              <Link to="/contato">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="text-lg px-8 py-6 border-white text-primary"
+                >
+                  Agendar demonstração
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -110,7 +117,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Meu Gestor CTA Section */}
+      {/* Meu Gestor CTA Section 
       <section className="py-24 bg-secondary/50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
@@ -119,13 +126,13 @@ export default function Home() {
                 Conheça o <span className="text-accent">Meu Gestor</span>
               </h2>
               <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                Nossa plataforma proprietária que revoluciona a gestão financeira empresarial. 
+                Nossa plataforma proprietária que revoluciona a gestão financeira empresarial.
                 Dashboards intuitivos, análises precisas e suporte de consultores especializados.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center">
                 <Button size="lg">
                   Explorar Meu Gestor
-                  
+
                 </Button>
                 <Button variant="outline" size="lg">
                   Ver demonstração
@@ -155,7 +162,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials Section
       <section className="py-24 bg-background">
@@ -201,9 +208,16 @@ export default function Home() {
               Começar agora
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>*/}
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-white text-accent">
-              Falar com especialista
-            </Button>
+
+            <Link to="/contato">
+              <Button
+                variant="outline"
+                size="lg"
+                className="text-lg px-8 py-6 border-white text-accent"
+              >
+                Falar com especialista
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

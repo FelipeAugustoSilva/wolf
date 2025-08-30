@@ -42,7 +42,7 @@ export default function Contato() {
     {
       icon: Mail,
       title: "E-mail",
-      value: "contato@wolfconsultoria.com.br",
+      value: "contato@wolftech.app.br",
       description: "Resposta em até 2 horas úteis"
     },
     // {
@@ -69,8 +69,8 @@ export default function Contato() {
             <p className="text-muted-foreground mb-6">
               Obrigado pelo seu contato. Nossa equipe entrará em contato em breve.
             </p>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               onClick={() => setIsSubmitted(false)}
               className="w-full"
             >
@@ -129,16 +129,16 @@ export default function Contato() {
       {/* Formulário de Contato */}
       <section className="py-24 bg-secondary/50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-2 lg:gap-16">
+          <div className="lg:grid lg:grid-cols-1 lg:gap-16">
             <div>
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
                 Envie sua mensagem
               </h2>
               <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                Preencha o formulário ao lado e nossa equipe entrará em contato em até 2 horas úteis. 
+                Preencha o formulário ao lado e nossa equipe entrará em contato em até 2 horas úteis.
                 Ou se preferir, utilize um dos canais de contato direto.
               </p>
-              
+
               <div className="mt-8 space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent/10">
@@ -165,13 +165,18 @@ export default function Contato() {
                 <p className="text-sm text-muted-foreground mb-4">
                   Para atendimento imediato, fale conosco pelo WhatsApp
                 </p>
-                <Button variant="outline" className="w-full">
+                <Button
+                  variant="outline"
+                  className="w-full"
+                  onClick={() => window.open("https://wa.me/5543920006786?text=Olá! Quero mais informações.", "_blank")}
+                >
                   <Phone className="h-4 w-4 mr-2" />
                   Conversar no WhatsApp
                 </Button>
               </div>
             </div>
 
+            {/*}
             <div className="mt-12 lg:mt-0">
               <Card className="border-border">
                 <CardContent className="p-8">
@@ -296,13 +301,13 @@ export default function Contato() {
                     </Button>
 
                     <p className="text-xs text-muted-foreground text-center">
-                      Ao enviar este formulário, você concorda em receber comunicações da WOLF. 
+                      Ao enviar este formulário, você concorda em receber comunicações da WOLF.
                       Seus dados serão tratados conforme nossa política de privacidade.
                     </p>
                   </form>
                 </CardContent>
               </Card>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

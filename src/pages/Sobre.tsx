@@ -48,7 +48,7 @@ export default function Sobre() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Sobre a <span className="text-accent">WOLF</span>
+              Sobre a <span className="text-accent">WOLF Technologies</span>
             </h1>
             <p className="mt-6 text-xl leading-8 text-white/90">
               Transformamos dados em decisões.

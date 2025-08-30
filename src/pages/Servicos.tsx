@@ -84,7 +84,7 @@ export default function Servicos() {
         "Sistemas web customizados",
         "APIs e webservices",
         "Integração entre sistemas",
-        // "Progressive Web Apps (PWA)",
+        "Progressive Web Apps (PWA)",
         "Sincronização de dados",
         "Automação de processos"
       ],
@@ -156,7 +156,7 @@ export default function Servicos() {
             </p>
             <div className="mt-10">
               <Button size="lg" variant="secondary" className="text-lg px-8 py-6" asChild>
-                <Link to="/demo">
+                <Link to="/contato">
                   Agendar Consultoria Gratuita
 
                 </Link>
@@ -310,10 +310,10 @@ export default function Servicos() {
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="secondary" size="lg" className="text-lg px-8 py-6" asChild>
-              <Link to="/demo">
+              {/* <Link to="/demo">
                 Agendar Consultoria Gratuita
 
-              </Link>
+              </Link> */}
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-white text-accent" asChild>
               <Link to="/contato">
