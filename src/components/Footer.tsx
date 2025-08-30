@@ -12,7 +12,7 @@ export default function Footer() {
               <span className="text-2xl font-light text-accent"> Technologies</span>
             </div>
             <p className="text-sm leading-6 text-primary-foreground/80">
-              Transformamos números em decisões estratégicas. Consultoria financeira especializada 
+              Transformamos números em decisões estratégicas. Consultoria financeira especializada
               com tecnologia de ponta para impulsionar o crescimento do seu negócio.
             </p>
             {/*}
@@ -60,7 +60,7 @@ export default function Footer() {
                   {[
                     // { name: "Cases de Sucesso", href: "/cases" },
                     { name: "Contato", href: "/contato" },
-                    { name: "Demonstração", href: "/demo" },
+                    // { name: "Demonstração", href: "/demo" },
                   ].map((item) => (
                     <li key={item.name}>
                       <Link
@@ -78,13 +78,24 @@ export default function Footer() {
               <div>
                 <h3 className="text-sm font-semibold leading-6">Contato</h3>
                 <ul role="list" className="mt-6 space-y-4">
-                  <li className="flex items-center space-x-3">
-                    <Phone className="h-4 w-4 text-accent" />
-                    <span className="text-sm text-primary-foreground/80">(43) 92000-6786</span>
+                  <li className="flex items-start space-x-3">
+                    <Phone className="h-4 w-4 text-accent mt-0.5" />
+                    <a
+                      href="tel:+5543920006786"
+                      className="text-sm text-primary-foreground/80"
+                    >
+                      (43) 92000-6786
+                    </a>
                   </li>
-                  <li className="flex items-center space-x-3">
-                    <Mail className="h-4 w-4 text-accent" />
-                    <span className="text-sm text-primary-foreground/80">contato@wolftech.app.br</span>
+
+                  <li className="flex items-start space-x-3">
+                    <Mail className="h-4 w-4 text-accent mt-0.5" />
+                    <a
+                      href="mailto:contato@wolftech.app.br"
+                      className="text-sm text-primary-foreground/80 flex-1 min-w-0 break-words"
+                    >
+                      contato@wolftech.app.br
+                    </a>
                   </li>
                   {/* <li className="flex items-start space-x-3">
                     <MapPin className="h-4 w-4 text-accent mt-0.5" />
@@ -94,6 +105,7 @@ export default function Footer() {
                     </span>
                   </li> */}
                 </ul>
+
               </div>
             </div>
           </div>
