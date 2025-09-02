@@ -117,7 +117,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Meu Gestor CTA Section 
+      {/* Meu Gestor CTA Section */}
       <section className="py-24 bg-secondary/50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 lg:items-center">
@@ -129,15 +129,14 @@ export default function Home() {
                 Nossa plataforma proprietária que revoluciona a gestão financeira empresarial.
                 Dashboards intuitivos, análises precisas e suporte de consultores especializados.
               </p>
-              <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center">
-                <Button size="lg">
-                  Explorar Meu Gestor
-
-                </Button>
-                <Button variant="outline" size="lg">
-                  Ver demonstração
-                </Button>
+              <div className="mt-8 flex justify-center items-center">
+                <Link to="/meu-gestor">
+                  <Button variant="outline" size="lg">
+                    Saiba mais
+                  </Button>
+                </Link>
               </div>
+
               <div className="mt-8 flex items-center space-x-6">
                 <div className="flex items-center space-x-2">
                   <Shield className="h-5 w-5 text-accent" />
@@ -162,7 +161,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Testimonials Section
       <section className="py-24 bg-background">
