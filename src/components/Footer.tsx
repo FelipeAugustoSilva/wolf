@@ -41,7 +41,7 @@ export default function Footer() {
                     { name: "Início", href: "/" },
                     { name: "Sobre a WOLF", href: "/sobre" },
                     { name: "Serviços", href: "/servicos" },
-                    // { name: "Meu Gestor", href: "/meu-gestor" },
+                    { name: "Meu Gestor", href: "/meu-gestor" },
                   ].map((item) => (
                     <li key={item.name}>
                       <Link
@@ -74,10 +74,10 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+            <div className="md:grid md:grid-cols-2 md:gap-2">
               <div>
                 <h3 className="text-sm font-semibold leading-6">Contato</h3>
-                <ul role="list" className="mt-6 space-y-4">
+                <ul role="list" className="mt-3 space-y-2">
                   <li className="flex items-start space-x-3">
                     <Phone className="h-4 w-4 text-accent mt-0.5" />
                     <a

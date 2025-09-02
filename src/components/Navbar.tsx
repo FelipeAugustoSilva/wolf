@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 const navigation = [
   { name: "Início", href: "/" },
   { name: "Sobre a WOLF", href: "/sobre" },
+    { name: "MeuGestor", href: "/meu-gestor" },
   { name: "Serviços", href: "/servicos" },
   { name: "Contato", href: "/contato" },
 ];
